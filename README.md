@@ -39,6 +39,9 @@ OPENAI_API_KEY="your_api_key_here"
 
 Replace your_api_key_here with your actual OpenAI API key.
 
+### Note: 
+There is a rate limit on OpenAI API calls, which is currently set at 3 calls per minute. If you exceed this limit, the chatbot_conversation and chatbot_summary functions will raise an error.
+
 ## Configuration
 You can configure ChatBot by passing a JSON configuration file to the ChatBot constructor:
 
