@@ -42,8 +42,9 @@ bot = ChatBot(config_file="config.json")
 The configuration file should be a JSON file with the following structure:
 ```
 {
-    "initial_message": {
-        "content": "Hello, how can I help you?"
+     "initial_message": {
+    "role": "system",
+    "content": "You are ChatBot, an empathetic assistant of professional mental counselor"
     },
     "summary_prompt": {
         "content": "Can you summarize our conversation?"
@@ -53,4 +54,4 @@ The configuration file should be a JSON file with the following structure:
 }
 ```
 
-The initial_message key specifies the initial message that the chatbot should send to the user. The summary_prompt key specifies the prompt that the chatbot should use when generating a conversation summary. The rate_limit key specifies the minimum number of seconds between chatbot API requests. The model_engine key specifies the GPT-3 model engine that the chatbot should use.
+The ```initial_message``` key specifies the role and task of chatbot. The ```summary_prompt``` key specifies the prompt that the chatbot should use when generating a conversation summary. The ```rate_limit``` key specifies the minimum number of seconds between chatbot API requests. The ```model_engine``` key specifies the GPT-3 model engine that the chatbot should use.
