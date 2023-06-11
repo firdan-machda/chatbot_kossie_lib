@@ -30,6 +30,14 @@ summary = bot.chatbot_summary()
 print("Summary:", summary)
 ```
 This code creates a ChatBot instance and uses it to generate a summary of a conversation. The chatbot_summary method returns a string containing a summary of the conversation.
+## API Key
+Before using ChatBot, you'll need to set your OpenAI API key in the .env file located in the root directory of your project. Your .env file should look like this:
+
+```
+OPENAI_API_KEY="your_api_key_here"
+```
+
+Replace your_api_key_here with your actual OpenAI API key.
 
 ## Configuration
 You can configure ChatBot by passing a JSON configuration file to the ChatBot constructor:
