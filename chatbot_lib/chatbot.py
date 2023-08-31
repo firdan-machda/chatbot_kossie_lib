@@ -1,17 +1,18 @@
 import openai
 import json
 import os
-from dotenv import load_dotenv
 import time
+from dotenv import load_dotenv
 
 load_dotenv()
-
-openai.api_key = os.getenv("OPENAI_API_KEY")
 
 LAST_CALL_TIME = 0
 
 class ChatBot:
-    def __init__(self, config_file=None, chat_history=None):
+    def __init__(self, config_file=None, chat_history=None, api_key=""):
+        # prioritize defined api key rather than from environment
+        openai.api_key = api_key if api_key else os.getenv("OPENAI_API_KEY")
+        
         if config_file is not None:
             with open(config_file, encoding="utf-8") as f:
                 config = json.load(f)
