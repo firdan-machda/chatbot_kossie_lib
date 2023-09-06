@@ -10,6 +10,13 @@ LAST_CALL_TIME = 0
 
 class ChatBot:
     def __init__(self, config_file=None, chat_history=None, api_key=""):
+        """inital file
+
+        Args:
+            config_file (str, optional): path to config file. Defaults to None.
+            chat_history (dict, optional): with format {messages:[...,<chat_history>]}. Defaults to None.
+            api_key (str, optional): open ai key if not provided will tried to get from OPENAI_API_KEY environment. Defaults to "".
+        """
         # prioritize defined api key rather than from environment
         openai.api_key = api_key if api_key else os.getenv("OPENAI_API_KEY")
         
@@ -189,7 +196,7 @@ class ChatBot:
 
         return self._conversation_tags
     
-    def generate_tittle(self):
+    def generate_title(self):
         self._check_rate_limit()
 
         prompt = self._summary_title_prompt + " " + self._conversation_summary
