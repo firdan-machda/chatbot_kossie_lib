@@ -10,12 +10,13 @@ LAST_CALL_TIME = 0
 
 class ChatBot:
     def __init__(self, config_file=None, chat_history=None, api_key=""):
-        """inital file
+        """Chatbot for openai, word of warning chatbot_summary must be called FIRST before calling
+        other methods. Without it other methods will not work accordingly.
 
         Args:
             config_file (str, optional): path to config file. Defaults to None.
             chat_history (dict, optional): with format {messages:[...,<chat_history>]}. Defaults to None.
-            api_key (str, optional): open ai key if not provided will tried to get from OPENAI_API_KEY environment. Defaults to "".
+            api_key (str, optional): open ai key if not provided will tried to get from OPENAI_API_KEY environment. Defaults to "".       
         """
         # prioritize defined api key rather than from environment
         openai.api_key = api_key if api_key else os.getenv("OPENAI_API_KEY")
