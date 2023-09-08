@@ -9,7 +9,7 @@ load_dotenv()
 LAST_CALL_TIME = 0
 
 class ChatBot:
-    def __init__(self, config_file=None, chat_history=None, api_key=""):
+    def __init__(self, config_file=None, chat_history=None, api_key="", language=""):
         """Chatbot for openai, word of warning chatbot_summary must be called FIRST before calling
         other methods. Without it other methods will not work accordingly.
 
@@ -101,7 +101,7 @@ class ChatBot:
 
         self._rate_limit                = int(config.get("rate_limit", 20))
         self._model_engine              = config.get("model_engine", "gpt-3.5-turbo")
-        self._language                  = config.get("language", "en")
+        self._language                  = config.get("language", "en") if not language else language
         self._summary_prompt            = config.get("summary_prompt", {}).get("content", "Can you summarize our conversation?")
         self._summary_title_prompt      = config.get("summary_title", {}).get("content", "Can you generate a title")
         self._generate_questions_prompt = config.get("generate_questions_prompt", {}).get("content", "Can you generate 3 questions")
