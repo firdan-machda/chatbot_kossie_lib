@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='chatbot_lib',
-    version='0.2',
+    version='0.3',
     author='Emma Do',
     author_email='ttdo@connect.ust.hk',
     description='A library for creating chatbots using OpenAI',
