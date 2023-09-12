@@ -30,7 +30,7 @@ class ChatBot:
                         "initial_messages_en": [
                             {
                             "role": "system",
-                            "content": "You are ChatBot, an empathetic assistant of professional mental coach in a mental coaching session. You will talk with client  who is seeking mental help. Then please ask client 5 empathy curious deep open-ended questions to get more specific information as much as possible about the problem of client to find out the cause of problem. You ask each question then wait for the answer from client, then ask other question. The number of questions is limited to 5. Please to not provide any advice or suggestion or guidance to client. If they ask what should they do or ask for any suggestion or guidance, please say that: \"We're matching you with a coach based on your unique situation to provide personalized guidance and support.\" You show empathy after each answer, no need to mention about therapy, please remove repeated questions or answer. The purpose of this conversation is to gather client information so that the real therapist can provide suggestion. Before close the session ask client if they have any other concern, then close the conversation with a reminder that we are here to support. Finish with \"We're matching you with a coach based on your unique situation to provide personalized guidance and support.\""
+                            "content": "You are ChatBot, an empathetic assistant of professional mental coach in a mental coaching session. You will talk with client  who is seeking mental help. Then please ask client 5 empathy curious deep open-ended questions to get more specific information as much as possible about the problem of client to find out the cause of problem. You ask each question then wait for the answer from client, then ask other question. The number of questions is limited to 5. Please to not provide any advice or suggestion or guidance to client. If they ask what should they do or ask for any suggestion or guidance, please say that: \"We're matching you with a coach based on your unique situation to provide personalized guidance and support.\" You show empathy after each answer, no need to mention about therapy, please remove repeated questions or answer. The purpose of this conversation is to gather client information so that the real therapist can provide suggestion. Before close the session ask client if they have any other concern, then close the conversation with a reminder that we are here to support. Finish with \"We're matching you with a coach based on your unique situation to provide personalized guidance and support.\"  and \"CHAT_END\""
                             },
                             {
                             "role": "assistant",
@@ -40,7 +40,7 @@ class ChatBot:
                         "initial_messages_zh": [
                             {
                             "role": "system",
-                            "content": "You are ChatBot, an empathetic assistant of professional mental coach in a mental coaching session. All conversation will be in Cantonese. You will talk with client  who is seeking mental help. Then please ask client 5 empathy curious deep open-ended questions to get more specific information as much as possible about the problem of client to find out the cause of problem. You ask each question then wait for the answer from client, then ask other question. The number of questions is limited to 5. Please to not provide any advice or suggestion or guidance to client. If they ask what should they do or ask for any suggestion or guidance, please say that: \"我哋會為你尋找到最適合你嘅心理輔導師，提供個人化嘅指導同埋支持\" You show empathy after each answer, no need to mention about therapy, please remove repeated questions or answer. Remove '心理輔導師' - Counsellors or '心理醫生' - Therapists and replace them with '人生教練' as we don't serve either counsellors or therapists. The purpose of this conversation is to gather client information so that the real therapist can provide suggestion. Before close the session ask client if they have any other concern, then close the conversation with a reminder that we are here to support. Finish with \"我哋會為你尋找到最適合你嘅心理輔導師，提供個人化嘅指導同埋支持\""
+                            "content": "You are ChatBot, an empathetic assistant of professional mental coach in a mental coaching session. All conversation will be in Cantonese. You will talk with client  who is seeking mental help. Then please ask client 5 empathy curious deep open-ended questions to get more specific information as much as possible about the problem of client to find out the cause of problem. You ask each question then wait for the answer from client, then ask other question. The number of questions is limited to 5. Please to not provide any advice or suggestion or guidance to client. If they ask what should they do or ask for any suggestion or guidance, please say that: \"我哋會為你尋找到最適合你嘅心理輔導師，提供個人化嘅指導同埋支持\" You show empathy after each answer, no need to mention about therapy, please remove repeated questions or answer. Remove '心理輔導師' - Counsellors or '心理醫生' - Therapists and replace them with '人生教練' as we don't serve either counsellors or therapists. The purpose of this conversation is to gather client information so that the real therapist can provide suggestion. Before close the session ask client if they have any other concern, then close the conversation with a reminder that we are here to support. Finish with \"我哋會為你尋找到最適合你嘅心理輔導師，提供個人化嘅指導同埋支持\"  and \"CHAT_END\""
                             },
                             {
                             "role": "assistant",
@@ -50,7 +50,7 @@ class ChatBot:
                         "initial_messages_cn": [
                             {
                             "role": "system",
-                            "content": "You are ChatBot, an empathetic assistant of professional mental coach in a mental coaching session. All conversation will be in Mandarin. You will talk with client  who is seeking mental help. Then please ask client 5 empathy curious deep open-ended questions to get more specific information as much as possible about the problem of client to find out the cause of problem. You ask each question then wait for the answer from client, then ask other question. The number of questions is limited to 5. Please to not provide any advice or suggestion or guidance to client. If they ask what should they do or ask for any suggestion or guidance, please say that: \"我们将会为您寻找到最适合您的心理辅导师，提供个性化的指导和支持。\" You show empathy after each answer, no need to mention about therapy, please remove repeated questions or answer. Remove '心理輔導師' - Counsellors or '心理醫生' - Therapists and replace them with '人生教練' as we don't serve either counsellors or therapists.The purpose of this conversation is to gather client information so that the real therapist can provide suggestion. Before close the session ask client if they have any other concern, then close the conversation with a reminder that we are here to support. Finish with \"我们将会为您寻找到最适合您的心理辅导师，提供个性化的指导和支持。\""
+                            "content": "You are ChatBot, an empathetic assistant of professional mental coach in a mental coaching session. All conversation will be in Mandarin. You will talk with client  who is seeking mental help. Then please ask client 5 empathy curious deep open-ended questions to get more specific information as much as possible about the problem of client to find out the cause of problem. You ask each question then wait for the answer from client, then ask other question. The number of questions is limited to 5. Please to not provide any advice or suggestion or guidance to client. If they ask what should they do or ask for any suggestion or guidance, please say that: \"我们将会为您寻找到最适合您的心理辅导师，提供个性化的指导和支持。\" You show empathy after each answer, no need to mention about therapy, please remove repeated questions or answer. Remove '心理輔導師' - Counsellors or '心理醫生' - Therapists and replace them with '人生教練' as we don't serve either counsellors or therapists.The purpose of this conversation is to gather client information so that the real therapist can provide suggestion. Before close the session ask client if they have any other concern, then close the conversation with a reminder that we are here to support. Finish with \"我们将会为您寻找到最适合您的心理辅导师，提供个性化的指导和支持。\"  and \"CHAT_END\""
                             },
                             {
                             "role": "assistant",
@@ -114,11 +114,8 @@ class ChatBot:
 
         self._rate_limit                = int(config.get("rate_limit", 20))
         self._model_engine              = config.get("model_engine", "gpt-3.5-turbo")
-        self._language                  = config.get("language", "en")
-        # self._summary_prompt            = config.get("summary_prompt", {}).get("content", "Can you summarize our conversation?")
-        self._summary_prompt            = "Can you summarize our conversation?"
-        self._summary_title_prompt      = config.get("summary_title_prompt_en", {}).get("content", "Can you generate a title")
-        self._generate_questions_prompt = config.get("generate_questions_prompt", {}).get("content", "Can you generate 3 questions")
+        self._language                  = language if language else config.get("language", "en") 
+
         self._get_category_prompt       = config.get("get_category_prompt", {}).get("content", "")
         self._get_tags_prompt           = config.get("get_tags_prompt", {}).get("content", "")
         self._categories                = config.get("categories",[])
@@ -133,17 +130,21 @@ class ChatBot:
         self._conversation_tags         = ""
         self._conversation_questions    = ""
         
-        if self._language == "zh": #cantonese
+        if self._language == "zh": # cantonese
             self._initial_messages          = config.get("initial_messages_zh",[])
             self._summary_prompt            = config.get("summary_prompt_zh", {}).get("content", "Can you summarize our conversation in Cantonese?")
             self._summary_title_prompt      = config.get("summary_title_prompt_zh", {}).get("content", "Can you generate a title in Cantonese")
-        elif self._language == "cn": #mandarin
+            self._generate_questions_prompt = config.get("generate_questions_prompt_zh", {}).get("content", "Can you generate 3 questions in Cantonese?")
+        elif self._language == "cn": # mandarin
             self._initial_messages          = config.get("initial_messages_cn",[])
             self._summary_prompt            = config.get("summary_prompt_cn", {}).get("content", "Can you summarize our conversation in Mandarin?")
             self._summary_title_prompt      = config.get("summary_title_prompt_cn", {}).get("content", "Can you generate a title in Mandarin")
-        else:
+            self._generate_questions_prompt = config.get("generate_questions_prompt_cn", {}).get("content", "Can you generate 3 questions in Mandarin?")
+        else: # english
             self._initial_messages          = config.get("initial_messages_en",[])
             self._summary_prompt            = config.get("summary_prompt_en", {}).get("content", "Can you summarize our conversation?")
+            self._summary_title_prompt      = config.get("summary_title_prompt_en", {}).get("content", "Can you generate a title")
+            self._generate_questions_prompt = config.get("generate_questions_prompt_en", {}).get("content", "Can you generate 3 questions ?")
 
         if chat_history is None:
             self._chat_history = {"messages": self._initial_messages}
@@ -172,14 +173,14 @@ class ChatBot:
 
         try:
             bot_response = self.generate_response(self._chat_history["messages"])
-            for end_phrase in self._ending_phrases:
-                if end_phrase in bot_response:
-                    self._is_ending = True
+
+            if bot_response.find("CHAT_END") > 0:
+                self._is_ending = True
         except Exception as e:
             raise Exception(f"Failed to get bot response: {e}")
         self._chat_history["messages"].append({"role": "assistant", "content": bot_response})
 
-        return bot_response
+        return bot_response.replace("CHAT_END", "")
 
     def chatbot_summary(self):
         self._check_rate_limit()
