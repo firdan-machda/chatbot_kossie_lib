@@ -2,6 +2,8 @@ import openai
 import json
 import os
 import time
+import re
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -171,16 +173,22 @@ class ChatBot:
         current_message = {"role": "user", "content": user_input}
         self._chat_history["messages"].append(current_message) 
 
+        item_replace = ""
         try:
             bot_response = self.generate_response(self._chat_history["messages"])
 
-            if bot_response.find("CHAT_END") > 0:
+            item = re.search(r"CHAT_END", bot_response, re.IGNORECASE)
+            matched = item
+            if matched:
                 self._is_ending = True
+                item_replace = matched.group()
         except Exception as e:
             raise Exception(f"Failed to get bot response: {e}")
         self._chat_history["messages"].append({"role": "assistant", "content": bot_response})
 
-        return bot_response.replace("CHAT_END", "")
+        if item_replace:
+            return bot_response.replace(item_replace, "")
+        return bot_response
 
     def chatbot_summary(self):
         self._check_rate_limit()
