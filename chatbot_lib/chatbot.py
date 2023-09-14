@@ -177,17 +177,14 @@ class ChatBot:
         try:
             bot_response = self.generate_response(self._chat_history["messages"])
 
-            item = re.search(r"CHAT_END", bot_response, re.IGNORECASE)
-            matched = item
+            matched = re.search(r"CHAT_END", bot_response, re.IGNORECASE)
             if matched:
                 self._is_ending = True
-                item_replace = matched.group()
+
         except Exception as e:
             raise Exception(f"Failed to get bot response: {e}")
         self._chat_history["messages"].append({"role": "assistant", "content": bot_response})
 
-        if item_replace:
-            return bot_response.replace(item_replace, "")
         return bot_response
 
     def chatbot_summary(self):
